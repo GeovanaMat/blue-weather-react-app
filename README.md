@@ -1,4 +1,5 @@
-# React + Vite
+<div align="center"><h1>Blue Weather</h1></div>
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
