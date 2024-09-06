@@ -18,7 +18,7 @@ const HomeWeather = () => {
     data
     } = useWeatherContext();
 
-
+    
   return (
     <>
     <div className={style.external_container}>

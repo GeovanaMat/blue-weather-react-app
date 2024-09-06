@@ -6,7 +6,8 @@
     align-items: center;
     padding: 1rem 1rem;
     gap: 1rem;
-    border-radius: 20px;
+    border-radius: 30px;
+    margin-top: 1.5rem;
 }
 
 .footer_container img{

@@ -76,15 +76,15 @@ const WeatherProvider = ({children}) =>{
       }
       
       const getDescriptionCurrentWeather = (codigo,weatherCodes,eDia) => {
-        if(codigo && weatherCodes && eDia){
+        if(codigo && weatherCodes && eDia !=null){
             const filtred = Object.entries(weatherCodes).filter(([key,]) => key == codigo);
-            return eDia == 1 ? filtred[0][1].day.description : filtred[0][1].night.description;
+            return eDia ? filtred[0][1].day.description : filtred[0][1].night.description;
         }
         
       }
 
       const getImageCurrentWeather = (codigo,weatherCodes,eDia) => {
-        if(codigo && weatherCodes && eDia){
+        if(codigo && weatherCodes && eDia != null){
             const filtred = Object.entries(weatherCodes).filter(([key,]) => key == codigo);
             return eDia == 1 ? filtred[0][1].day.image : filtred[0][1].night.image;
         }
@@ -98,7 +98,7 @@ const WeatherProvider = ({children}) =>{
       
       const[,ano,mes,dia,hora,] = dataHora ? getDataHoraFormatado(dataHora) : [];
 
-
+      
      
     return(
         <WeatherContext.Provider value={
