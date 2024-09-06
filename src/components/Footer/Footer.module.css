@@ -17,7 +17,13 @@
     text-align: center;
 }
 
+.footer_container p a{
+    color: black;
+}
+
 .footer_container span{
     font-weight: 500;
 }
+
+
 

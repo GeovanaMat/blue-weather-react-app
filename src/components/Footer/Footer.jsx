@@ -8,7 +8,6 @@ const Footer = () => {
         </a>
         <p>Desenvolvido por <span>Geovana Matias</span><br></br> Icons por <a href="https://icons8.com.br/">Icon8</a>. 
         Uso de <a href="https://open-meteo.com/">Open-Meteo API</a>
-        <a></a>
         </p>
         
         </div>
