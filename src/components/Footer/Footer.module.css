@@ -13,6 +13,10 @@
     width: 2rem;
 }
 
+.footer_container p{
+    text-align: center;
+}
+
 .footer_container span{
     font-weight: 500;
 }

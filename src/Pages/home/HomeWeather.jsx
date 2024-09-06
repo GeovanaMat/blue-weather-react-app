@@ -18,9 +18,7 @@ const HomeWeather = () => {
     data
     } = useWeatherContext();
 
-    console.log(data)
 
-  console.log(temperatura)
   return (
     <>
     <div className={style.external_container}>

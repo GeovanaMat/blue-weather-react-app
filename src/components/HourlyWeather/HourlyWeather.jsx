@@ -17,7 +17,6 @@ const HourlyWeather = () => {
 
     let listaInformacoes = [];
 
-    console.log()
 
     if(previsaoHora){
         const [dataHoras,temperaturas,codigoClima] = Object.values(previsaoHora);
@@ -28,7 +27,6 @@ const HourlyWeather = () => {
                 listaInformacoes.push([hora,temperaturas[i],description]);
             }
         }
-        console.log(listaInformacoes)
     }
 
     

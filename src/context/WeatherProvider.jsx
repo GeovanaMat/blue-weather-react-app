@@ -69,16 +69,14 @@ const WeatherProvider = ({children}) =>{
 
       const getDescriptionWeather = (codigo,weatherCodes) => {
         if(codigo && weatherCodes){
-            console.log(weatherCodes);
             const filtred = Object.entries(weatherCodes).filter(([key,]) => key == codigo);
             return filtred[0][1].day.description;
         }
         
       }
-      console.log(typeof eDia)
+      
       const getDescriptionCurrentWeather = (codigo,weatherCodes,eDia) => {
         if(codigo && weatherCodes && eDia){
-            console.log(weatherCodes);
             const filtred = Object.entries(weatherCodes).filter(([key,]) => key == codigo);
             return eDia == 1 ? filtred[0][1].day.description : filtred[0][1].night.description;
         }

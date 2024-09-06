@@ -54,8 +54,6 @@ const DailyWeather = ()=>{
       }
     }
 
-        console.log(listaDias)
-
 
     return(
         <div className={style.container}>
