@@ -108,11 +108,11 @@
     }
 
     .image_container{
-        width: 15%;
+        width: 4rem;
     }
 
     .image_container img{
-        width: 10rem;
+        width: 8rem;
     }
 
     .current_weather{
@@ -133,11 +133,11 @@
     }
 
     .temperature{
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 
     .current_weather span {
-        transform: translateY(0.8rem);
+        transform: translateY(0.5rem);
     }
     
 }
