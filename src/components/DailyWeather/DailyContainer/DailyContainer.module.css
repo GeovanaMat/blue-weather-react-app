@@ -1,0 +1,28 @@
+.info_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0 1rem 0;
+    padding: 1rem 0.5rem;
+    border-radius: 20px;
+    color: var(--black);
+    flex: 1 1 3rem; /* Permite redimensionamento */
+    min-width: 1rem; 
+}
+
+
+.day{
+    font-size: 1.2rem;
+}
+.temperatura{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.clima{
+    width: 4rem;
+    filter: drop-shadow(0 0 1px var(--grey));
+}
+    

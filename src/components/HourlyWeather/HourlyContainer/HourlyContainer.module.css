@@ -1,0 +1,26 @@
+.container_info{
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 1rem 1rem 1rem;
+    flex: 1 1 1rem;
+    min-width: 0.5rem;
+}
+
+.hour{
+    font-size: 0.75rem;
+}
+.temperatura{
+    font-size: 1rem;
+    color: var(--grey);
+}
+
+.clima{
+    color: var(--grey);
+    font-size: 0.7rem;
+    text-align: center;
+    
+}
+
