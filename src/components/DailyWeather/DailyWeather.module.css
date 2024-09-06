@@ -1,7 +1,7 @@
 .container{
     display: flex;
     background-color: white;
-    margin: 1rem 1rem 3rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
     border-radius: 15px;
     gap: 1rem;
     padding: 0rem 1rem 0rem 1rem;
@@ -41,3 +41,4 @@
 .clima{
     width: 4rem;
 }
+

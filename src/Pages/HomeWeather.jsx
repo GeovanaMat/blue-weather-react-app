@@ -23,9 +23,11 @@ const HomeWeather = () => {
   console.log(temperatura)
   return (
     <>
+    <div className={style.external_container}>
+      
     <div className={style.weather_container}>
         <div className={style.localization}>
-          <img src="src\assets\local.png" />
+          <img src="https://img.icons8.com/?size=100&id=VUhyeqSS9WU7&format=png&color=000000" />
           <p>Manaus</p>
         </div>
 
@@ -37,6 +39,7 @@ const HomeWeather = () => {
             {temperatura}<span>º</span>
           </p>
         </div>
+        
         <p className={style.status}>{descricaoClima}</p>
         <div className={style.info_weather}>
           <div className={style.linha_degrade}></div>
@@ -50,6 +53,7 @@ const HomeWeather = () => {
         <div className={style.current_date}>
           <p>{data}</p>
         </div>
+        </div>
       </div>
       <div>
          <HourlyWeather/>
@@ -58,6 +62,7 @@ const HomeWeather = () => {
       <div>
       <DailyWeather/>
       </div>
+    
     
     
       

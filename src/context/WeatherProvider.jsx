@@ -57,7 +57,7 @@ const WeatherProvider = ({children}) =>{
     
      }, [])
 
-     const{temperatura,codigoClima, umidadeRelativa,ventoVelocidade, totalChuva, dataHora} = currentWeather ? currentWeather : {};
+     const{temperatura,codigoClima, umidadeRelativa,ventoVelocidade, totalChuva, dataHora, eDia} = currentWeather ? currentWeather : {};
      const{previsaoHora,previsaoDia} = weather ? weather : {};
 
       const getImageWeather = (codigo,weatherCodes) => {
@@ -75,6 +75,22 @@ const WeatherProvider = ({children}) =>{
         }
         
       }
+      console.log(typeof eDia)
+      const getDescriptionCurrentWeather = (codigo,weatherCodes,eDia) => {
+        if(codigo && weatherCodes && eDia){
+            console.log(weatherCodes);
+            const filtred = Object.entries(weatherCodes).filter(([key,]) => key == codigo);
+            return eDia == 1 ? filtred[0][1].day.description : filtred[0][1].night.description;
+        }
+        
+      }
+
+      const getImageCurrentWeather = (codigo,weatherCodes,eDia) => {
+        if(codigo && weatherCodes && eDia){
+            const filtred = Object.entries(weatherCodes).filter(([key,]) => key == codigo);
+            return eDia == 1 ? filtred[0][1].day.image : filtred[0][1].night.image;
+        }
+      }
 
       function getDataHoraFormatado(data) {
         if(data){
@@ -89,8 +105,8 @@ const WeatherProvider = ({children}) =>{
     return(
         <WeatherContext.Provider value={
             {temperatura : temperatura ? `${temperatura}`.slice(0,2) : "0",
-            urlClima: getImageWeather(codigoClima,weatherCodes),
-            descricaoClima: getDescriptionWeather(codigoClima,weatherCodes),
+            urlClima: getImageCurrentWeather(codigoClima,weatherCodes,eDia),
+            descricaoClima: getDescriptionCurrentWeather(codigoClima,weatherCodes,eDia),
             umidadeRelativa,
             ventoVelocidade,
             totalChuva,

@@ -1,0 +1,19 @@
+.footer_container{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    gap: 1rem;
+    border-radius: 20px;
+}
+
+.footer_container img{
+    width: 2rem;
+}
+
+.footer_container span{
+    font-weight: 500;
+}
+

@@ -88,3 +88,49 @@
     opacity: 0.90;
     padding: 0rem 0rem 2rem 0;
 }
+
+@media (min-width: 800px) {
+    .external_container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+
+
+    }
+    .weather_container{
+        margin: 1rem 1rem;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image_container{
+        width: 15%;
+    }
+
+    .image_container img{
+        width: 10rem;
+    }
+
+    .current_weather{
+        width: 20%;
+    }
+
+    .current_date{
+        width: 100%;
+    }
+    
+    
+    .info_weather{
+        width: 100%;
+    }
+
+    .info_container{
+        justify-content: space-evenly;
+    }
+
+    
+}
