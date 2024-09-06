@@ -1,1 +1,1 @@
-export * from "./HomeWeather"
+export * from "./home"

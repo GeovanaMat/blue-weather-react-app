@@ -1,9 +1,9 @@
 
-import {DailyWeather, HourlyWeather, InfoWeather } from "../components";
+import {DailyWeather, HourlyWeather, InfoWeather } from "../../components";
 
 import style from "./HomeWeather.module.css";
 
-import { useWeatherContext } from "../hook";
+import { useWeatherContext } from "../../hook";
 
 
 const HomeWeather = () => {
