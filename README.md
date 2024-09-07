@@ -18,5 +18,5 @@ Web app de dados metereológicos de Manaus. Dados em tempo real obtidos pela <a 
 Tema escuro em desenvolvimento...
 
 ## Links
-Icons por [Icon8](https://icons8.com.br/icons)
+- Icons por [Icon8](https://icons8.com.br/icons)
 
