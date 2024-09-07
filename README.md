@@ -13,10 +13,10 @@ Web app de dados metereológicos de Manaus. Dados em tempo real obtidos pela <a 
 ## Screenshots
 <div align="center">
 <img src="screenshot.png" width="500px" />
-<div/>
+</div>
 
 Tema escuro em desenvolvimento...
 
-
-
+## Links
+Icons por [Icon8](https://icons8.com.br/icons)
 
