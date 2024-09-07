@@ -4,7 +4,7 @@
 
 
 
-Web app de dados metereológicos de Manaus. Mostra dados em tempo real obtidos pela <a href="https://open-meteo.com/">Open-Meteo API
+Web app de dados metereológicos de Manaus. Dados em tempo real obtidos pela <a href="https://open-meteo.com/">Open-Meteo API
 </a>.
 
 ## Tecnologias utilizadas
@@ -14,5 +14,9 @@ Web app de dados metereológicos de Manaus. Mostra dados em tempo real obtidos p
 <div align="center">
 <img src="screenshot.png" width="500px" />
 <div/>
+
+Tema escuro em desenvolvimento...
+
+
 
 
