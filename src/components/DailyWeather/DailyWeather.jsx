@@ -42,17 +42,21 @@ const DailyWeather = ()=>{
       const data = new Date();
       let diaDaSemana = data.getDay();
       for (let i = 0; i < 4; i++) {
+        if (diaDaSemana >= 6) {
+            diaDaSemana = -1;
+          }
         diaDaSemana += 1;
-        if (codigoClima && dataDia && temperaturaMaxima) {
+        if (codigoClima != null && dataDia != null && temperaturaMaxima) {
           const urlImage = getImageWeather(codigoClima[i], weatherCodes);
           const diaSemana = getDiaSemana(diaDaSemana);
+          console.log(diaDaSemana)
           listaDias.push([diaSemana, urlImage, temperaturaMaxima[i]]);
         }
-        if (diaDaSemana == 6) {
-          diaDaSemana = 0;
-        }
+        
       }
     }
+
+
 
 
     return(

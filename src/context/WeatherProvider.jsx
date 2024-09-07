@@ -61,14 +61,14 @@ const WeatherProvider = ({children}) =>{
      const{previsaoHora,previsaoDia} = weather ? weather : {};
 
       const getImageWeather = (codigo,weatherCodes) => {
-        if(codigo && weatherCodes){
+        if(codigo != null && weatherCodes){
             const filtred = Object.entries(weatherCodes).filter(([key,]) => key == codigo);
             return filtred[0][1].day.image;
         }
       }
 
       const getDescriptionWeather = (codigo,weatherCodes) => {
-        if(codigo && weatherCodes){
+        if(codigo != null && weatherCodes){
             const filtred = Object.entries(weatherCodes).filter(([key,]) => key == codigo);
             return filtred[0][1].day.description;
         }
@@ -76,7 +76,7 @@ const WeatherProvider = ({children}) =>{
       }
       
       const getDescriptionCurrentWeather = (codigo,weatherCodes,eDia) => {
-        if(codigo && weatherCodes && eDia !=null){
+        if(codigo != null && weatherCodes && eDia !=null){
             const filtred = Object.entries(weatherCodes).filter(([key,]) => key == codigo);
             return eDia ? filtred[0][1].day.description : filtred[0][1].night.description;
         }
@@ -84,7 +84,7 @@ const WeatherProvider = ({children}) =>{
       }
 
       const getImageCurrentWeather = (codigo,weatherCodes,eDia) => {
-        if(codigo && weatherCodes && eDia != null){
+        if(codigo != null && weatherCodes && eDia != null){
             const filtred = Object.entries(weatherCodes).filter(([key,]) => key == codigo);
             return eDia == 1 ? filtred[0][1].day.image : filtred[0][1].night.image;
         }

@@ -21,14 +21,16 @@ const HourlyWeather = () => {
     if(previsaoHora){
         const [dataHoras,temperaturas,codigoClima] = Object.values(previsaoHora);
         for(let i = hora+1; i < hora+5 ; i ++ ){
-            if(dataHoras && codigoClima && temperaturas){
+            if(dataHoras != null && codigoClima != null && temperaturas != null){
                 const[,,,,hora,] = getDataHoraFormatado(dataHoras[i])
+                console.log(codigoClima[i])
                 const description = getDescriptionWeather(codigoClima[i],weatherCodes)
                 listaInformacoes.push([hora,temperaturas[i],description]);
             }
         }
     }
 
+    console.log(listaInformacoes);
     
     return(
         <>
